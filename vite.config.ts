@@ -6,7 +6,7 @@ import tailwindcss from "@tailwindcss/vite";
 import { resolve } from "path";
 
 export default defineConfig({
-  base: "Digikala-Js-Pure",
+  base: "/Digikala-Js-Pure/",
   plugins: [tailwindcss()],
   build: {
     rollupOptions: {
