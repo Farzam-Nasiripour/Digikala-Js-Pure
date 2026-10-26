@@ -1,5 +1,6 @@
 //                       Imports                       //
 // import { initSwipers } from "./swiper";
+import './style.css'
 import "./html with js/html.js";
 import "./scroll.js";
 import { initSwiper_2 } from "./swiper.js";
