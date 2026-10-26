@@ -1,5 +1,6 @@
 //                       Imports                       //
-import { attachInputValidation } from "../helper.js";
+import { attachInputValidation } from "helper.js";
+import "./style.css";
 //                     Imports End                     //
 
 //                    body
@@ -28,7 +29,7 @@ const logoDiv = document.createElement("div"),
   logo = document.createElement("div");
 logoDiv.className = "logoDiv";
 logo.className = "logo";
-logo.innerHTML = '<img src="../Pictures/Logo/Logo.svg" alt="">';
+logo.innerHTML = '<img src="./Pictures/Logo/Logo.svg" alt="">';
 main.insertAdjacentElement("beforeend", logoDiv);
 logoDiv.insertAdjacentElement("beforeend", logo);
 //                  desktop
@@ -53,7 +54,7 @@ form.id = "formLogin";
 form.className = "form";
 form.action = "./dashboard.html";
 form.method = "get";
-form.target = "_blank"
+form.target = "_blank";
 main.insertAdjacentElement("beforeend", form);
 //                  input
 const input = document.createElement("div");
