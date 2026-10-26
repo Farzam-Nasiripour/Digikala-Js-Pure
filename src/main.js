@@ -1,6 +1,6 @@
 //                       Imports                       //
 // import { initSwipers } from "./swiper";
-import './style.css'
+import "./style.css";
 import "./html with js/html.js";
 import "./scroll.js";
 import { initSwiper_2 } from "./swiper.js";
@@ -168,14 +168,15 @@ let timerInterval;
 
 function startDiscountTimer(deadlineString) {
   clearInterval(timerInterval);
-  
+
   // 🟢 گرفتن المان‌های جداگانه
   const hoursEl = document.getElementById("timerHours");
   const minutesEl = document.getElementById("timerMinutes");
   const secondsEl = document.getElementById("timerSeconds");
   const timerBox = document.getElementById("discountTimerBox");
-  
-  if (!hoursEl || !minutesEl || !secondsEl || !timerBox || !deadlineString) return;
+
+  if (!hoursEl || !minutesEl || !secondsEl || !timerBox || !deadlineString)
+    return;
 
   const targetTime = new Date(deadlineString).getTime();
   if (isNaN(targetTime)) return;
@@ -194,7 +195,9 @@ function startDiscountTimer(deadlineString) {
       return;
     }
 
-    const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const hours = Math.floor(
+      (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+    );
     const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
