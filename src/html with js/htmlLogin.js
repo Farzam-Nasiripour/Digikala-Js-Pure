@@ -1,6 +1,5 @@
 //                       Imports                       //
 import { attachInputValidation } from "../helper.js";
-import "./style.css";
 //                     Imports End                     //
 
 //                    body
