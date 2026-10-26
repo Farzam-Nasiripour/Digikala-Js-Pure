@@ -1,5 +1,5 @@
 //                       Imports                       //
-import { initSwiper_3 } from "./swiper.js";
+import { initSwiper_3 } from "../swiper.js";
 //                     Imports End                     //
 //                    body
 
