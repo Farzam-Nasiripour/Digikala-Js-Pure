@@ -1,19 +1,12 @@
 /*                     Imports                     */
-/*                       CDN                       */
-
-@import url(https://cdn.jsdelivr.net/npm/swiper@12/swiper.min.css);
-
-/*                     CDN End                     */
-
 @import "tailwindcss";
-@import "./modules/Fonts.module.css";
-@import "./modules/Header.module.css";
-@import "./modules/Dock.module.css";
-@import "./modules/Main.module.css";
-@import "./modules/Footer.module.css";
-@import "./modules/Login.module.css";
-@import "./modules/Dashboard.module.css";
-@import "../node_modules/swiper/swiper-bundle.min.css";
+@import "/modules/Fonts.module.css";
+@import "/modules/Header.module.css";
+@import "/modules/Dock.module.css";
+@import "/modules/Main.module.css";
+@import "/modules/Footer.module.css";
+@import "/modules/Login.module.css";
+@import "/modules/Dashboard.module.css";
 
 /*                   Imports End                   */
 

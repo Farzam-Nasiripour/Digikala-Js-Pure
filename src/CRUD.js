@@ -1,5 +1,5 @@
 //                       Imports                       //
-import { initSwiper_1, initSwiper_2 } from "./swiper.js";
+import { initSwiper_1, initSwiper_2 } from "/swiper.js";
 //                     Imports End                     //
 const body = document.querySelector("#dashboard");
 

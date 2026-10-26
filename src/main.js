@@ -1,8 +1,8 @@
 //                       Imports                       //
 // import { initSwipers } from "./swiper";
-import "./html with js/html.js";
-import "./scroll.js";
-import { initSwiper_2 } from "./swiper.js";
+import "/html with js/html.js";
+import "/scroll.js";
+import { initSwiper_2 } from "/swiper.js";
 //                     Imports End                     //
 
 // const body = document.querySelector("#app");

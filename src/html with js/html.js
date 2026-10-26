@@ -1,5 +1,5 @@
 //                       Imports                       //
-import { initSwiper_3 } from "./swiper.js";
+import { initSwiper_3 } from "/swiper.js";
 //                     Imports End                     //
 //                    body
 
@@ -86,14 +86,14 @@ divNav3.className = "divNav3";
 bannerTag.setAttribute("target", "_blank");
 bannerTag.href =
   "https://www.digikala.com/landing/digital-useful/?&promo_name=%D8%AF%DB%8C%D8%AC%DB%8C%D8%AA%D8%A7%D9%84%DB%8C%E2%80%8C%D9%87%D8%A7%DB%8C+%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%D8%AF%DB%8C&promo_position=all_mega_menu_top&promo_creative=207816&bCode=207816";
-bannerMobile.src = "./Pictures/banner/mobile.webp";
+bannerMobile.src = "/Pictures/banner/mobile.webp";
 bannerMobile.classList.add("w-full", "h-9", "lg:h-15", "object-cover");
 bannerTablet.media = "(min-width: 768px)";
-bannerTablet.srcset = "./Pictures/banner/tablet.webp";
+bannerTablet.srcset = "/Pictures/banner/tablet.webp";
 bannerDesktop.media = "(min-width: 1024px)";
-bannerDesktop.srcset = "./Pictures/banner/desktop.webp";
+bannerDesktop.srcset = "/Pictures/banner/desktop.webp";
 
-headerDivLogo.src = "./Pictures/Logo/Logo.svg";
+headerDivLogo.src = "/Pictures/Logo/Logo.svg";
 
 headerInput.setAttribute("placeholder", "جستوجو");
 headerInput.type = "text";
@@ -139,10 +139,10 @@ spanLi5.innerHTML =
   '<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="dress" aria-hidden="true" role="img" class="iconify iconify--emojione-monotone" preserveAspectRatio="xMidYMid meet" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M59.462 28.726l-.27.347C51.83 18.277 51.13 6.763 51.13 6.763l-7.912-2.324L40.821 2H22.857l-2.703 2.578l-7.438 2.185s-.691 11.335-7.895 22.058l-.265-.342L2 31.699l10.939 14.264l1.298-4.962l-.341-.441c1.463-4.962 4.003-14.562 4.614-23.3l.915 4.671l-.856-.109l1.369 6.135l.677.084c.262.628.534 1.249.823 1.859c.183.383.287.755.333 1.125l-1.169 3.527l.434-.021l-.806 2.297l.472-.063c-2.412 6.018-6.571 14.244-6.099 22.998c0 0 7.915 2.237 17.318 2.237c9.006 0 17.32-2.237 17.32-2.237c.475-8.786-3.99-17.338-6.4-23.368v-7.641a2.64 2.64 0 0 0 .691-.488c.202-.198.742-.726.644-1.43c-.06-.429-.313-.692-.577-.883c.966-1.792 1.677-4.132 1.677-4.132l-.856.109l.915-4.671c.627 8.922 3.261 18.742 4.707 23.605l-.346.445l1.382 4.884L62 31.951l-2.538-3.225M12.526 43.907L3.171 31.71l1.378-1.735l8.684 11.235l-.707 2.697m10.706-21.581l-2.418-.239c5.956-9.888 19.938-19.01 19.967-19.03l1.292 1.185c-7.174 5.254-14.039 11.707-18.841 18.084M39.344 2.931l-2.919 2.145H26.304l-2.277-2.145h15.317m-16.498.158l7.458 7.025l-1.531 1.405l-7.497-7.063l1.57-1.367m-.13 28.438l16.199-.771v1.983l-16.561.797c.21-.679.354-1.341.362-2.009m16.187-3.074l.012.933l-17.645-2.201a41.888 41.888 0 0 1-1.107-3.117l16.86 2.204c-1.707 1.349.85 2.293 1.88 2.181m-2.875 1.51l-13.406.637a4.576 4.576 0 0 0-.354-1.102c-.207-.436-.401-.88-.593-1.325l14.353 1.79m2.887 3.711v1.87c-2.288-.337-3.642-.322-5.758-.297c-.659.009-1.395.018-2.259.018c-2.092 0-5.959.062-9.316.45l.249-.678c.07-.188.137-.37.203-.554l16.881-.809M21.954 60.222V36.61a65.696 65.696 0 0 1 3.738-.286v24.334l-3.738-.436m20.94-32.624c-.267.262-.613.415-.972.51v21.19H40.54V28.231c-.305-.018-.518-.052-.518-.052s-.395-1.844.552-2.769c.272-.267.465-.372.615-.372c.373 0 .492.64.948 1.069c.641.606 1.703.565.757 1.491m.045-2.48c-.828-.754-1.42-1.136-1.763-1.136c-.34 0-.679.123-.997.309c-2.02-.958-2.125 1.178-2.125 1.178l-18.188-2.377l-.12-.282c7.736.917 16.518 1.062 24.235.117c-.138.336-.859 1.769-1.042 2.191m7.77 16.393l8.758-11.285l1.365 1.732l-9.369 12.217l-.754-2.664" fill="#000000"></path></g></svg> <span>دیجی‌استایل</span>';
 
 categoryAll.innerHTML =
-  ' <a href="https://www.digikala.com/superapp/units/?ff_ctx=JTdCJTIyZ2xvYmFsX3VzZXJfaWQlMjIlM0ElMjJlZDk3MGMzMS0zZWJlLTRhYTItOTUzOC1kYWQ5NzY0YTdiODglMjIlN0Q%253D"><img src="./Pictures/Category/category.svg" alt=""></a>';
+  ' <a href="https://www.digikala.com/superapp/units/?ff_ctx=JTdCJTIyZ2xvYmFsX3VzZXJfaWQlMjIlM0ElMjJlZDk3MGMzMS0zZWJlLTRhYTItOTUzOC1kYWQ5NzY0YTdiODglMjIlN0Q%253D"><img src="/Pictures/Category/category.svg" alt=""></a>';
 
 categoryBtnDiv.innerHTML =
-  ' <a href=""><img class="digikala" src="./Pictures/Category/digikala.webp" alt=""></a> <a href=""><img src="./Pictures/Category/supermarket.webp" alt=""></a> <a href=""><img src="./Pictures/Category/gold.webp" alt=""></a> <a href=""><img src="./Pictures/Category/bazar.gif" alt=""></a> <a href=""><img src="./Pictures/Category/style.webp" alt=""></a> <a href=""><img src="./Pictures/Category/value.webp" alt=""></a> <a href=""><img src="./Pictures/Category/gishe.webp" alt=""></a> <a href=""><img src="./Pictures/Category/medicine.webp" alt=""></a> <a href=""><img src="./Pictures/Category/hypermarket.webp" alt=""></a>';
+  ' <a href=""><img class="digikala" src="/Pictures/Category/digikala.webp" alt=""></a> <a href=""><img src="/Pictures/Category/supermarket.webp" alt=""></a> <a href=""><img src="/Pictures/Category/gold.webp" alt=""></a> <a href=""><img src="/Pictures/Category/bazar.gif" alt=""></a> <a href=""><img src="/Pictures/Category/style.webp" alt=""></a> <a href=""><img src="/Pictures/Category/value.webp" alt=""></a> <a href=""><img src="/Pictures/Category/gishe.webp" alt=""></a> <a href=""><img src="/Pictures/Category/medicine.webp" alt=""></a> <a href=""><img src="/Pictures/Category/hypermarket.webp" alt=""></a>';
 
 spanNav3.innerHTML = "<span>در دیجی‌کالا بفروشید!</span>";
 
@@ -289,98 +289,98 @@ bodyBanner.innerHTML = `<div class="swiper mySwiper_3">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img
-            src="./Banner/1.webp"
+            src="/Banner/1.webp"
             class="w-full h-45 md:h-60 lg:h-100 object-cover"
             alt=""
           />
         </div>
         <div class="swiper-slide">
           <img
-            src="./Banner/2.webp"
+            src="/Banner/2.webp"
             class="w-full h-45 md:h-60 lg:h-100 object-cover"
             alt=""
           />
         </div>
         <div class="swiper-slide">
           <img
-            src="./Banner/3.webp"
+            src="/Banner/3.webp"
             class="w-full h-45 md:h-60 lg:h-100 object-cover"
             alt=""
           />
         </div>
         <div class="swiper-slide">
           <img
-            src="./Banner/4.webp"
+            src="/Banner/4.webp"
             class="w-full h-45 md:h-60 lg:h-100 object-cover"
             alt=""
           />
         </div>
         <div class="swiper-slide">
           <img
-            src="./Banner/5.webp"
+            src="/Banner/5.webp"
             class="w-full h-45 md:h-60 lg:h-100 object-cover"
             alt=""
           />
         </div>
         <div class="swiper-slide">
           <img
-            src="./Banner/6.webp"
+            src="/Banner/6.webp"
             class="w-full h-45 md:h-60 lg:h-100 object-cover"
             alt=""
           />
         </div>
         <div class="swiper-slide">
           <img
-            src="./Banner/7.webp"
+            src="/Banner/7.webp"
             class="w-full h-45 md:h-60 lg:h-100 object-cover"
             alt=""
           />
         </div>
         <div class="swiper-slide">
           <img
-            src="./Banner/8.webp"
+            src="/Banner/8.webp"
             class="w-full h-45 md:h-60 lg:h-100 object-cover"
             alt=""
           />
         </div>
         <div class="swiper-slide">
           <img
-            src="./Banner/9.webp"
+            src="/Banner/9.webp"
             class="w-full h-45 md:h-60 lg:h-100 object-cover"
             alt=""
           />
         </div>
         <div class="swiper-slide">
           <img
-            src="./Banner/10.webp"
+            src="/Banner/10.webp"
             class="w-full h-45 md:h-60 lg:h-100 object-cover"
             alt=""
           />
         </div>
         <div class="swiper-slide">
           <img
-            src="./Banner/11.webp"
+            src="/Banner/11.webp"
             class="w-full h-45 md:h-60 lg:h-100 object-cover"
             alt=""
           />
         </div>
         <div class="swiper-slide">
           <img
-            src="./Banner/12.webp"
+            src="/Banner/12.webp"
             class="w-full h-45 md:h-60 lg:h-100 object-cover"
             alt=""
           />
         </div>
         <div class="swiper-slide">
           <img
-            src="./Banner/13.webp"
+            src="/Banner/13.webp"
             class="w-full h-45 md:h-60 lg:h-100 object-cover"
             alt=""
           />
         </div>
         <div class="swiper-slide">
           <img
-            src="./Banner/14.webp"
+            src="/Banner/14.webp"
             class="w-full h-45 md:h-60 lg:h-100 object-cover"
             alt=""
           />
@@ -410,8 +410,8 @@ bodySwiper.innerHTML = `<div class="containerSliders">
         <!-- 🟢 باکس تایمر (باید اینجا هم باشد) -->
         <div id="discountTimerBox" class="hidden  text-white p-2.5 text-center">
           <div class="w-30 md:w-41.5 flex flex-col gap-y-3">
-            <img src="./Pictures/Logo/Discount.svg" alt="" class="p-7 md:p-10">
-            <img src="./Pictures/Logo/Offer.svg" alt="">
+            <img src="/Pictures/Logo/Discount.svg" alt="" class="p-7 md:p-10">
+            <img src="/Pictures/Logo/Offer.svg" alt="">
           </div>
           <div class="flex flex-col gap-y-2">
             <div style="font-size: 11px; margin-bottom: 2px;">فرصت باقی‌مانده</div>
