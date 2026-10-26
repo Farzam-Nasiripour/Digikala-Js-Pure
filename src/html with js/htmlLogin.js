@@ -1,5 +1,5 @@
 //                       Imports                       //
-import { attachInputValidation } from "../helper";
+import { attachInputValidation } from "../helper.js";
 //                     Imports End                     //
 
 //                    body
