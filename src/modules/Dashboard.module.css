@@ -1,0 +1,166 @@
+@layer components {
+  .container {
+    @apply max-w-200 mx-auto p-5;
+    h1 {
+      @apply text-center mb-5 font-black text-3xl text-shadow-lg;
+    }
+    .divForm {
+      @apply bg-(--bg-color) rounded-(--border-radius) shadow-[3px_-3px_7px_var(--shadow-light),-3px_3px_7px_var(--shadow-dark)] px-3 py-5 md:p-7 border border-gray-300;
+      .card-form {
+        @apply bg-(--bg-color) rounded-(--border-radius) shadow-[inset_-5px_5px_10px_var(--shadow-dark),inset_5px_-5px_10px_var(--shadow-light)] p-3 md:p-5 mb-5;
+        h2 {
+          @apply mb-3;
+        }
+        .form-group {
+          @apply flex flex-col gap-y-2 mb-2.5;
+          label {
+            @apply block mb-1.5;
+          }
+          textarea,
+          input,
+          select {
+            @apply w-full min-h-10 rounded-md text-sm scrollbar-none bg-(--bg-color) p-3.75 border-[0.1rem] border-solid border-(--border-input) outline-none text-[16px] hover:shadow-[inset_1px_1px_3px_var(--shadow-dark),inset_-1px_-1px_3px_var(--shadow-light)] 
+            focus:border-none focus:shadow-[inset_-3px_3px_7px_var(--shadow-dark),inset_3px_-3px_7px_var(--shadow-light)] transition-shadow duration-250 ease-in;
+          }
+          textarea {
+            @apply min-h-25;
+          }
+        }
+        .btnDiv {
+          @apply w-full h-fit flex justify-between items-center;
+        }
+        .btn {
+          @apply bg-(--bg-color) text-gray-200 rounded-(--border-radius) shadow-[3px_-3px_7px_var(--shadow-light),-3px_3px_7px_var(--shadow-dark)] mt-4 p-4 transition-all duration-100 ease-in hover:text-(--shadow-light) hover:opacity-70 py-2.5 px-3.5 cursor-pointer text-shadow-[2px_-2px_2px_var(--shadow-dark),-2px_2px_10px_var(--shadow-dark)] md:text-[1.2rem] font-bold active:shadow-[1px_1px_3px_var(--shadow-dark),-1px_-1px_3px_var(--shadow-light)];
+        }
+        .text {
+          @apply text-black text-sm md:text-lg [text-shadow:3px_3px_2px_var(--shadow-light),-3px_3px_4px_var(--shadow-dark)];
+        }
+      }
+    }
+
+    .cards-container {
+      @apply flex flex-wrap justify-center items-center  gap-3.5;
+    }
+
+    .card {
+      /* width: calc(90% - 14px); */
+      width: 100% !important;
+      @apply h-100 lg:h-fit bg-sky-50 border border-gray-300 shadow-2xs flex flex-col overflow-hidden md:w-[calc(30%-14px)] md:flex-wrap;
+      img {
+        @apply w-full h-1/2 object-fill;
+      }
+      .card-body {
+        @apply w-full h-35 flex flex-col gap-y-1 px-2 py-1 flex-1;
+        .card-pricing {
+          @apply flex flex-col items-end;
+          .price {
+            @apply flex items-center gap-2 mt-2;
+            .discount-badge {
+              @apply bg-red-400 text-white text-xs py-1 px-2 rounded-md md:px-1;
+            }
+            .original-price {
+              @apply line-through text-sm text-gray-400;
+            }
+          }
+          .final-price {
+            @apply font-Estedad-Bold text-sm mt-1;
+          }
+        }
+        .edit-input {
+          @apply border rounded-md;
+        }
+        .edit-label {
+          @apply py-2 text-gray-700;
+        }
+      }
+      .card-title {
+        @apply font-bold mt-0 mx-0 mb-1.5;
+      }
+      .card-text {
+        @apply mt-0 mx-0 mb-2 line-clamp-2 text-xs md:text-lg;
+      }
+      .card-actions {
+        @apply w-full h-15 flex justify-between gap-1.5 p-2.5 border-t border-gray-300;
+        button {
+          @apply py-1.5 px-2.5 border-none rounded-md cursor-pointer text-sm;
+        }
+        .edit-btn {
+          @apply bg-amber-400 text-white;
+        }
+        .save-btn {
+          @apply bg-teal-400 text-white;
+        }
+        .cancel-btn {
+          @apply bg-gray-400 text-white;
+        }
+        .delete-btn {
+          @apply bg-rose-400 text-white;
+        }
+      }
+    }
+    .containerSliders {
+      @apply w-full h-full flex flex-col;
+      .sliderDiv {
+        @apply w-full h-full flex flex-col gap-y-5;
+        .sliderRegular {
+          @apply w-full h-fit bg-(--bg-color) rounded-t-(--border-radius) shadow-[3px_-3px_7px_var(--shadow-light),-3px_3px_7px_var(--shadow-dark)] border border-gray-400;
+          .title {
+            @apply flex justify-between items-center px-3 py-2 border-b border-gray-400 select-none;
+            label {
+              @apply flex justify-center items-center gap-x-2 cursor-pointer;
+            }
+          }
+        }
+        .sliderDiscount {
+          @apply w-full h-fit bg-(--bg-color) rounded-t-(--border-radius) shadow-[3px_-3px_7px_var(--shadow-light),-3px_3px_7px_var(--shadow-dark)] border border-gray-400;
+          .title {
+            @apply flex flex-col md:flex-row text-xs md:text-lg gap-y-3 justify-between items-center px-3 py-2 border-b border-gray-400 select-none;
+            label {
+              @apply flex justify-center items-center gap-x-2 cursor-pointer;
+            }
+          }
+        }
+        .sliderElse {
+          @apply w-full h-fit bg-(--bg-color) rounded-t-(--border-radius) shadow-[3px_-3px_7px_var(--shadow-light),-3px_3px_7px_var(--shadow-dark)] border border-gray-400;
+          .title {
+            @apply flex justify-between items-center px-3 py-2 border-b border-gray-400 select-none;
+            label {
+              @apply flex justify-center items-center gap-x-2 cursor-pointer;
+            }
+          }
+        }
+      }
+    }
+    .swiper {
+      @apply w-full h-full;
+      .swiper-wrapper {
+        @apply w-full h-full;
+        .swiper-slide {
+          @apply h-full flex justify-center items-center;
+        }
+      }
+      .swiper-button-next {
+        height: 40px !important;
+        margin-left: 8px !important;
+        color: black !important;
+        @apply bg-(--bg-color) p-3 md:py-2.5 rounded-full;
+      }
+      .swiper-button-prev {
+        height: 40px !important;
+        margin-right: 8px !important;
+        color: black !important;
+        @apply bg-(--bg-color) p-3 md:py-2.5 rounded-full;
+      }
+      @media (width >= 768px) {
+        .swiper-button-next {
+          height: 50px !important;
+          margin-left: 12px !important;
+        }
+        .swiper-button-prev {
+          height: 50px !important;
+          margin-right: 12px !important;
+        }
+      }
+    }
+  }
+}

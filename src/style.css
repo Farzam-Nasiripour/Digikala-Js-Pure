@@ -1,0 +1,90 @@
+/*                     Imports                     */
+/*                       CDN                       */
+
+@import url(https://cdn.jsdelivr.net/npm/swiper@12/swiper.min.css);
+
+/*                     CDN End                     */
+
+@import "tailwindcss";
+@import "./modules/Fonts.module.css";
+@import "./modules/Header.module.css";
+@import "./modules/Dock.module.css";
+@import "./modules/Main.module.css";
+@import "./modules/Footer.module.css";
+@import "./modules/Login.module.css";
+@import "./modules/Dashboard.module.css";
+@import "../node_modules/swiper/swiper-bundle.min.css";
+
+/*                   Imports End                   */
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply font-Estedad-Regular bg-[#F2F3F5];
+  }
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
+
+  .flex-evenly {
+    @apply flex items-center justify-evenly;
+  }
+
+  .flex-end {
+    @apply flex items-end justify-end;
+  }
+
+  .flex-right {
+    @apply flex items-center justify-start;
+  }
+
+  .flex-left {
+    @apply flex items-center justify-end;
+  }
+
+  .flex-around {
+    @apply flex items-center justify-around;
+  }
+
+  .flex-top {
+    @apply flex items-start justify-center;
+  }
+}
+
+/*                      Fonts                      */
+@theme {
+  /*                    Estdad                     */
+  --font-Estedad-Black: "Estedad-Black";
+  --font-Estedad-Bold: "Estedad-Bold";
+  --font-Estedad-ExtraBold: "Estedad-ExtraBold";
+  --font-Estedad-ExtraLight: "Estedad-ExtraLight";
+  --font-Estedad-Light: "Estedad-Light";
+  --font-Estedad-Medium: "Estedad-Medium";
+  --font-Estedad-Regular: "Estedad-Regular";
+  --font-Estedad-SemiBold: "Estedad-SemiBold";
+  --font-Estedad-Thin: "Estedad-Thin";
+  /*                  Estdad End                   */
+}
+/*                    Fonts End                    */
+@theme {
+  --bg-color: #e0e5ec; /* رنگ پس‌زمینه اصلی */
+  --bg-color-2: gray;
+  --shadow-dark: #a3b1c6; /* سایه تیره */
+  --shadow-light: #ffffffd0; /* سایه روشن */
+  --text-color: #555; /* رنگ متن اصلی */
+  --primary-color: #007bff; /* رنگ اصلی برای دکمه‌ها */
+  --primary-shadow-dark: #0056b3;
+  --primary-shadow-light: #4da3ff;
+  --border-radius: 15px;
+  --border-radius-rounded: 50%;
+  --border-input: rgba(255, 255, 255, 0.4);
+}

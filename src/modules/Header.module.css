@@ -1,0 +1,196 @@
+@layer components {
+  /*                     Header                     */
+  .header {
+    @apply w-full h-fit bg-white sticky top-0 z-100 transition-transform ease-in duration-300;
+
+    .banner {
+      @apply w-full h-full flex justify-center items-center;
+    }
+    .banner {
+      max-height: 100px; /* یا حداکثر ارتفاعی که بنر شما دارد */
+      overflow: hidden;
+      transition:
+        max-height 0.3s ease,
+        padding 0.3s ease,
+        opacity 0.3s ease;
+      will-change: max-height, padding, opacity;
+      @apply w-full h-full flex justify-center items-center;
+    }
+
+    /* 🟢 وقتی مخفی می‌شود، ارتفاع و فضای بنر کاملاً صفر می‌شود */
+    .banner.banner-hidden {
+      max-height: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .categoryDiv {
+      @apply w-full h-fit flex items-center lg:hidden;
+      .categoryAll {
+        @apply w-fit h-fit p-3;
+        a {
+          @apply w-fit h-fit;
+          .digikala {
+            @apply bg-white;
+          }
+          img {
+            @apply px-2 py-4 rounded-md bg-white border border-gray-300;
+          }
+        }
+      }
+      .categoryBtnDiv {
+        @apply w-full h-full flex justify-between items-center pl-3 gap-1 md:p-3 md:gap-x-3;
+        a {
+          @apply w-full h-fit;
+          img {
+            @apply md:w-15 h-fit sm:p-1 md:p-3 rounded-md bg-white border border-gray-300;
+          }
+        }
+      }
+    }
+    .headerDiv {
+      @apply w-full h-fit px-4 pb-1 flex gap-x-5  lg:py-3 lg:px-29.5;
+      .headerDivSearch {
+        @apply w-full h-fit flex items-center lg:gap-x-4;
+        .headerSearch {
+          @apply flex justify-center items-center;
+        }
+        .headerDivInput {
+          @apply w-full flex justify-between items-center px-2 md:gap-x-2 rounded-4xl border border-gray-400 bg-gray-200 lg:w-140;
+
+          input {
+            @apply w-full p-2 outline-0 text-gray-500 font-Estedad-SemiBold;
+          }
+        }
+        .headerDivLogo {
+          @apply w-48.75 h-7.5 hidden lg:block;
+        }
+      }
+      .headerDivLogin {
+        @apply w-fit h-fit;
+        .headerUl {
+          @apply w-fit h-fit flex gap-x-2;
+          .headerUlLi1 {
+            @apply w-11 h-11 flex justify-center items-center bg-gray-50 rounded-full border border-gray-400;
+            a {
+              @apply w-6 h-6;
+            }
+          }
+          .headerUlLi2 {
+            @apply hidden lg:w-26 lg:h-11 lg:px-2 lg:flex lg:items-center lg:bg-gray-50 lg:rounded-md lg:border lg:border-gray-400;
+
+            .headerUlLi2Div {
+              @apply w-fit lg:flex lg:justify-center lg:items-center;
+              .svgLogin {
+                @apply w-7 h-fit;
+              }
+              .headerUlLi2Span {
+                @apply w-full text-xs text-nowrap px-1;
+              }
+            }
+            a {
+              @apply w-6 h-6;
+            }
+          }
+          .headerUlLi3 {
+            @apply hidden lg:w-10 lg:h-11 lg:px-2 lg:flex lg:justify-center lg:items-center lg:bg-gray-50 lg:rounded-md lg:border lg:border-gray-400;
+            .svgCartOff {
+              @apply w-10 h-fit;
+            }
+          }
+        }
+      }
+    }
+    .divSortMain {
+      /* 🟢 استفاده از max-height و پدینگ برای جمع شدن کامل فضا */
+      max-height: 80px; /* یا ارتفاع تقریبی منو */
+      overflow: hidden;
+      transition:
+        max-height 0.3s ease,
+        padding 0.3s ease,
+        opacity 0.3s ease;
+      will-change: max-height, padding, opacity;
+      background-color: #ffffff;
+      @apply lg:px-29.5 lg:flex lg:justify-between py-2; /* اگر پدینگ عمودی دارید اینجا مشخص کنید */
+    }
+
+    /* 🟢 وقتی مخفی می‌شود، ارتفاع و پدینگ صفر می‌شود تا هیچ جای خالی نماند */
+    .divSortMain.sort-hidden {
+      max-height: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      opacity: 0;
+      pointer-events: none;
+      border: none !important;
+    }
+    .divSortMain {
+      @apply lg:px-29.5 lg:flex lg:justify-between;
+      .divSort {
+        @apply w-fit h-fit hidden  lg:flex;
+        nav {
+          @apply w-full h-fit flex items-center divide-x divide-gray-400;
+          .divNav1 {
+            @apply w-fit h-fit flex pl-3 cursor-pointer;
+            span {
+              @apply flex justify-center items-center gap-x-2 text-xs text-gray-500;
+              .hamburgerMenu {
+                @apply w-5 h-fit;
+              }
+            }
+          }
+          .divNav2 {
+            @apply w-fit h-fit flex justify-center items-center;
+            ul {
+              @apply flex text-xs text-gray-500 gap-x-5 px-3;
+              li {
+                @apply cursor-pointer;
+                span {
+                  @apply flex justify-center items-center gap-x-1;
+                  .percent {
+                    @apply w-5 h-fit;
+                  }
+                  .basket {
+                    @apply w-5 h-fit;
+                  }
+                  .gold {
+                    @apply w-5 h-fit;
+                  }
+                  .fire {
+                    @apply w-5 h-fit;
+                  }
+                  .dress {
+                    @apply w-5 h-fit;
+                  }
+                }
+              }
+            }
+          }
+          .divNav3 {
+            @apply w-fit h-fit flex justify-center items-center px-3;
+            span {
+              @apply text-xs text-gray-500 cursor-pointer;
+            }
+          }
+        }
+      }
+      .divLocation {
+        @apply w-fit h-10 flex items-center;
+        .divLocationBtn {
+          @apply w-fit h-fit mr-4 p-1 flex justify-center items-center gap-x-1 lg:w-29.25 lg:h-8.5 lg:bg-[#FEF6EF] lg:rounded-2xl;
+          .locationSvg {
+            @apply w-4 h-fit lg:w-5;
+          }
+          span {
+            @apply text-xs text-[#A56C3A] lg:text-sm;
+          }
+          .chevron {
+            @apply w-5 h-fit lg:hidden;
+          }
+        }
+      }
+    }
+  }
+
+  /*                   Header End                   */
+}

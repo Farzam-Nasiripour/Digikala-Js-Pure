@@ -1,0 +1,29 @@
+@layer components {
+  .dockBody {
+    @apply w-full h-fit bg-gray-200 fixed bottom-0 z-100 lg:hidden;
+    ul {
+      @apply w-full h-full flex justify-evenly items-center;
+      a {
+        @apply w-fit h-full flex flex-col justify-center items-center gap-y-1 py-1 text-xs;
+        .home {
+          @apply w-8 h-fit;
+        }
+        .category {
+          @apply w-8 h-fit;
+        }
+        .shop {
+          @apply w-8 h-fit;
+        }
+        .q-a {
+          @apply w-8 h-fit;
+        }
+        .mydigikala {
+          @apply w-8 h-fit;
+        }
+        span{
+          @apply text-gray-800
+        }
+      }
+    }
+  }
+}

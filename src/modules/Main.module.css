@@ -1,0 +1,120 @@
+@layer components {
+  .container {
+    .main {
+      @apply flex flex-col gap-y-5 pb-15;
+    }
+    .containerSliders {
+      @apply w-full h-full flex flex-col;
+      .sliderDiv {
+        @apply w-full h-full flex flex-col gap-y-5;
+
+        .sliderRegular2,
+        .sliderDiscount2,
+        .sliderElse2 {
+          @apply w-full h-fit shadow-[3px_-3px_7px_var(--shadow-light),-3px_3px_7px_var(--shadow-dark)] border border-gray-400 rounded-(--border-radius) py-2;
+
+          h3.title {
+            @apply px-3 py-2 border-b border-gray-400 select-none font-bold text-base md:text-lg;
+          }
+          .card {
+            /* width: calc(90% - 14px); */
+            width: 100% !important;
+            @apply h-100 lg:h-fit bg-sky-50 border border-gray-300 shadow-2xs flex flex-col overflow-hidden md:w-[calc(30%-14px)] md:flex-wrap;
+            img {
+              @apply w-full h-1/2 object-fill;
+            }
+            .card-body {
+              @apply w-full h-35 flex flex-col gap-y-1 px-2 py-1 flex-1;
+              .card-pricing {
+                @apply flex flex-col items-end;
+                .price {
+                  @apply flex items-center gap-2 mt-2;
+                  .discount-badge {
+                    @apply bg-red-400 text-white text-xs py-1 px-2 rounded-md md:px-1;
+                  }
+                  .original-price {
+                    @apply line-through text-sm text-gray-400;
+                  }
+                }
+                .final-price {
+                  @apply font-Estedad-Bold text-sm mt-1;
+                }
+              }
+            }
+            .card-name {
+              @apply font-bold mt-0 mx-0 mb-1.5;
+            }
+            .card-text {
+              @apply mt-0 mx-0 mb-2 line-clamp-2 text-xs md:text-lg;
+            }
+          }
+        }
+        .sliderRegular2 {
+          @apply p-2;
+        }
+        .sliderDiscount2 {
+          @apply bg-red-400;
+          .divSwiperDiscount {
+            @apply w-full flex justify-center items-center;
+          }
+        }
+        .sliderElse2 {
+          @apply bg-lime-600 p-2;
+        }
+      }
+    }
+    /* استایل مشترک دکمه‌های Swiper */
+    .swiper {
+      @apply w-full h-full;
+      .swiper-wrapper {
+        @apply w-full h-full;
+        .swiper-slide {
+          @apply h-full flex justify-center items-center;
+        }
+      }
+      .swiper-button-next {
+        height: 40px !important;
+        margin-left: 8px !important;
+        color: black !important;
+        @apply bg-(--bg-color) p-3 md:py-2.5 rounded-full;
+      }
+      .swiper-button-prev {
+        height: 40px !important;
+        margin-right: 8px !important;
+        color: black !important;
+        @apply bg-(--bg-color) p-3 md:py-2.5 rounded-full;
+      }
+      @media (width >= 768px) {
+        .swiper-button-next {
+          height: 50px !important;
+          margin-left: 12px !important;
+        }
+        .swiper-button-prev {
+          height: 50px !important;
+          margin-right: 12px !important;
+        }
+      }
+    }
+    .bodyCategory {
+      @apply w-full h-fit;
+      ul {
+        @apply w-full h-full grid grid-cols-5 gap-y-5 md:flex md:justify-between md:items-start md:gap-x-3;
+        li {
+          @apply w-full h-full;
+          a {
+            @apply w-full h-full flex flex-col justify-start items-center gap-y-3;
+            img {
+              @apply w-10 h-10  md:w-13 md:h-13 object-cover rounded-full;
+            }
+            div {
+              @apply w-10 h-10 flex justify-center items-center pb-2 md:w-13 md:h-13 rounded-full bg-white;
+            }
+            span {
+              @apply w-full text-center font-Estedad-SemiBold text-[7px] md:text-[9px];
+            }
+          }
+        }
+      }
+    }
+  }
+}

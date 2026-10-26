@@ -1,0 +1,71 @@
+@layer components {
+  #login {
+    @apply w-fit h-fit;
+    .arrowBackMobile {
+      @apply w-8 h-fit fixed right-2 top-2 lg:hidden;
+    }
+    .mainTag {
+      @apply w-screen h-screen flex flex-col justify-center items-center;
+      .divMain {
+        @apply w-full  lg:w-100;
+        .main {
+          @apply w-full h-fit flex flex-col gap-y-5 px-3 lg:border lg:border-gray-300 lg:px-6 lg:py-8 lg:rounded-md;
+
+          .logoDiv {
+            @apply w-full;
+            .logo {
+              @apply w-full h-fit flex justify-start md:justify-center pl-15 md:gap-x-7;
+              img {
+                @apply w-40 h-full;
+              }
+              .arrowBackDesktop {
+                @apply w-8 h-fit hidden lg:flex  lg:items-center lg:ml-5;
+              }
+            }
+          }
+
+          .text1 {
+            @apply text-gray-800 mt-10;
+          }
+
+          .text2 {
+            @apply text-gray-500 text-xs;
+          }
+          .form {
+            @apply flex flex-col gap-y-3 ;
+            .inputDiv {
+              @apply w-full;
+              .input {
+                @apply w-full  border border-gray-400 rounded-lg py-2 px-3;
+              }
+            }
+
+            .errorSpan{
+              @apply text-xs items-center gap-x-1;
+            }
+
+            .btnDiv {
+              @apply w-full h-fit;
+              .btn {
+                @apply w-full h-fit bg-red-400 rounded-md p-2 text-white;
+                .btnText {
+                  @apply px-[106.5px] md:px-[113.5px];
+                }
+              }
+            }
+          }
+
+          .text3 {
+            @apply text-[0.7rem] lg:text-xs;
+            .innerText1 {
+              @apply text-blue-400;
+            }
+            .innerText2 {
+              @apply text-blue-400;
+            }
+          }
+        }
+      }
+    }
+  }
+}
