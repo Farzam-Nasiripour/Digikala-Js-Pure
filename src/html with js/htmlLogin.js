@@ -1,5 +1,5 @@
 //                       Imports                       //
-import { attachInputValidation } from "/helper.js";
+import { attachInputValidation } from "./helper.js";
 //                     Imports End                     //
 
 //                    body
@@ -51,7 +51,7 @@ main.insertAdjacentElement("beforeend", text2);
 const form = document.createElement("form");
 form.id = "formLogin";
 form.className = "form";
-form.action = "../../dashboard.html";
+form.action = "./dashboard.html";
 form.method = "get";
 form.target = "_blank"
 main.insertAdjacentElement("beforeend", form);
