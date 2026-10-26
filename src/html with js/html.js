@@ -1,5 +1,4 @@
 //                       Imports                       //
-import "./style.css";
 import { initSwiper_3 } from "../swiper.js";
 //                     Imports End                     //
 //                    body
